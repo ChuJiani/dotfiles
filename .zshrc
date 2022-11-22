@@ -1,3 +1,6 @@
+# start speed benchmark
+# zmodload zsh/zprof
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -36,7 +39,7 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 
 # miniconda
 source /opt/miniconda/etc/profile.d/conda.sh
-conda activate chujiani
+# conda activate chujiani
 
 # proxy
 export http_proxy=http://127.0.0.1:7890/
