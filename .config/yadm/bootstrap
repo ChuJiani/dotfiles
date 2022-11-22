@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# colors
+INFOC="\x1b[1;36m"
+NC="\x1b[m"
+
+# zsh and plugins
+printf "${INFOC}Installing zsh and plugins...${NC}\n"
+sudo pacman -S zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k
+
