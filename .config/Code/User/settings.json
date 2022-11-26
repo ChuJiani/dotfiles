@@ -1,0 +1,22 @@
+{
+    "window.titleBarStyle": "custom",
+    "window.zoomLevel": 1,
+    "terminal.integrated.inheritEnv": false,
+    "workbench.colorTheme": "One Dark Pro Darker",
+    "clangd.path": "/usr/bin/clangd",
+    "clang-format.fallbackStyle": "Google",
+    "clang-format.assumeFilename": "/home/chujiani/.config/clang-format/.clang-format",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "cmake.configureOnOpen": true,
+    "clangd.arguments": [
+        "--compile-commands-dir=${workspaceFolder}/build",
+        "--background-index",
+        "--clang-tidy",
+        "--pch-storage=memory",
+        "-j=12"
+    ],
+    "doxdocgen.generic.authorEmail": "archet@chujiani.top",
+    "doxdocgen.generic.authorName": "ChuJiani"
+}
