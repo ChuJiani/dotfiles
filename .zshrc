@@ -46,6 +46,7 @@ export http_proxy=http://127.0.0.1:7890/
 export https_proxy=http://127.0.0.1:7890/
 
 # alias
+alias ls="ls --color=auto"
 alias la="ls -a "
 alias ll="ls -la "
 
