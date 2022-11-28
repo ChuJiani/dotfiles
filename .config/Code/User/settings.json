@@ -20,7 +20,7 @@
     "doxdocgen.generic.authorEmail": "archet@chujiani.top",
     "doxdocgen.generic.authorName": "ChuJiani",
     "github.copilot.enable": {
-        "*": true,
+        "*": false,
         "yaml": false,
         "plaintext": true,
         "markdown": true
