@@ -5,11 +5,14 @@ INFOC="\x1b[1;36m"
 NC="\x1b[m"
 
 # info function
-info(){
+Info(){
     printf "${INFOC}${1}${NC}\n"
 }
 
 # zsh and plugins
-info "Installing zsh and plugins..."
+Info "\n ===> Installing zsh and plugins..."
 sudo pacman -S zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k
 
+# terminal
+Info "\n ===> Installing alacritty and nerd font..."
+sudo pacman -S alacritty nerd-fonts-jetbrains-mono
