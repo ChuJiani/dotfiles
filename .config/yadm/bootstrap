@@ -9,10 +9,23 @@ Info(){
     printf "${INFOC}${1}${NC}\n"
 }
 
+# system update
+Info "\n===> Whole system updateing..."
+sudo pacman -Syu && yay -Syu
+
 # zsh and plugins
-Info "\n ===> Installing zsh and plugins..."
-sudo pacman -S zsh zsh-autosuggestions zsh-history-substring-search zsh-syntax-highlighting zsh-theme-powerlevel10k
+Info "\n===> Installing zsh and plugins..."
+sudo pacman -S zsh zsh-autosuggestions zsh-history-substring-search \
+    zsh-syntax-highlighting zsh-theme-powerlevel10k
 
 # terminal
-Info "\n ===> Installing alacritty and nerd font..."
+Info "\n===> Installing alacritty and nerd font..."
 sudo pacman -S alacritty nerd-fonts-jetbrains-mono
+
+# input method
+Info "\n===> Installing fcitx5, rime, rime-dicts, rime-clover..."
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-pinyin-moegirl-rimee \
+    fcitx5-pinyin-moegirl-rime fcitx5-pinyin-zhwiki-rime \
+    rime-cloverpinyin
+Info "\n===> Installing emoji from aur..."
+yay -S ttf-apple-emoji
