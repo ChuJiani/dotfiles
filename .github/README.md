@@ -1,17 +1,20 @@
 # dotfiles
-Personal configuration files managed with [yadm](https://yadm.io/#).
+Personal configuration files managed by [yadm](https://yadm.io/#).
 
 ## Quick start
 ### 1. Get yadm
+Install from repository.
 ```sh
-sudo pacman -S yadm # archlinux
+# archlinux
+sudo pacman -S yadm
 ```
 ### 2. Clone repo
-Use yadm to get all files in place.
+Get files in place.
 ```sh
 yadm clone git@github.com:ChuJiani/dotfiles.git
 ```
-### 3. Bootstrap (get necessary packages)
+### 3. Yadm bootstrap 
+Get necessary packages.
 ```sh
 yadm bootstrap  # execute ~/.config/yadm/bootsrap
 ```
