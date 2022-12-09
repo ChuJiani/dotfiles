@@ -102,7 +102,6 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 # ---------------------------
 # apps
 bindsym $mod+Shift+c exec --no-startup-id google-chrome-stable --proxy-server=127.0.0.1:7890
-bindsym $mod+z exec --no-startup-id icalingua
 bindsym Print exec --no-startup-id scrot ~/gallery/screenshot/%Y-%m-%d_%H-%M-%S_screenshot.png -z
 # bindsym $mod+e exec --no-startup-id caja
 bindsym Control+Mod1+a --release exec "scrot -s ~/gallery/screenshot/%Y-%m-%d_%H-%M-%S_selection.png -z"
@@ -114,6 +113,8 @@ bindsym $mod+Shift+p exec --no-startup-id i3lock -i ~/gallery/1920x1080.jpeg -u
 ###  For window      ###
 ########################
 for_window [class="icalingua" title="图片查看"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="smplayer"] floating enable
 
 # change focus
 bindsym $mod+j focus left

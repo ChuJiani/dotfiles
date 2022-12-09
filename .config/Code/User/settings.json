@@ -1,14 +1,8 @@
 {
     "window.titleBarStyle": "custom",
-    "window.zoomLevel": 1,
     "terminal.integrated.inheritEnv": false,
     "workbench.colorTheme": "One Dark Pro Darker",
     "clangd.path": "/usr/bin/clangd",
-    "clang-format.fallbackStyle": "Google",
-    "clang-format.assumeFilename": "/home/chujiani/.config/clang-format/.clang-format",
-    "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
-    },
     "cmake.configureOnOpen": true,
     "clangd.arguments": [
         "--compile-commands-dir=${workspaceFolder}/build",
@@ -20,11 +14,25 @@
     "doxdocgen.generic.authorEmail": "archet@chujiani.top",
     "doxdocgen.generic.authorName": "ChuJiani",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "yaml": false,
         "plaintext": true,
         "markdown": true
     },
     "editor.inlineSuggest.enabled": true,
-    "http.proxy": "http://127.0.0.1:7890/"
+    "http.proxy": "http://127.0.0.1:7890/",
+    "C_Cpp.autocomplete": "Disabled",
+    "clangd.detectExtensionConflicts": false,
+    "C_Cpp.intelliSenseEngine": "Disabled",
+    "C_Cpp.enhancedColorization": "Disabled",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.clang_format_path": "clang-format",
+    "clang-format.assumeFilename": "/home/chujiani/.config/clang-format/.clang-format",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono"
 }

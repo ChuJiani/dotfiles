@@ -1,4 +1,4 @@
-# start speed benchmark
+# speed benchmark
 # zmodload zsh/zprof
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -17,7 +17,6 @@ bindkey -e
 
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/chujiani/.zshrc'
-
 autoload -Uz compinit
 compinit
 # End of lines configured by coninstall
@@ -39,7 +38,6 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 
 # miniconda
 source /opt/miniconda/etc/profile.d/conda.sh
-# conda activate chujiani
 
 # proxy
 export http_proxy=http://127.0.0.1:7890/
@@ -49,6 +47,17 @@ export https_proxy=http://127.0.0.1:7890/
 alias ls="ls --color=auto"
 alias la="ls -a"
 alias ll="ls -la"
+
+# avoid mistakes
+alias rm="rm -i"
+
+# path
+export PATH=$PATH:/home/chujiani/workspace/scripts
+
+# accelerate yadm auto-complete
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
 
 # key bindings
 typeset -g -A key
@@ -78,9 +87,4 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-init zle_application_mode_start
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
-
-# accelerate yadm auto-complete
-__git_files () { 
-    _wanted files expl 'local files' _files     
-}
 
