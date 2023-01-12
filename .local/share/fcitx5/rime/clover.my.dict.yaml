@@ -1,0 +1,10 @@
+---
+name: clover.my
+version: "0.1"
+sort: by_weight
+use_preset_vocabulary: true
+import_tables:
+  - clover
+  - zhwiki
+  - moegirl
+---
