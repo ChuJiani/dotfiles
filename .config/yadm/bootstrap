@@ -24,7 +24,7 @@ sudo pacman -S alacritty nerd-fonts-jetbrains-mono
 
 # input method
 Info "\n===> Installing fcitx5, rime, rime-dicts, rime-clover..."
-sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-pinyin-moegirl-rimee \
+sudo pacman -S fcitx5 fcitx5-configtool fcitx5-qt fcitx5-pinyin-moegirl-rime \
     fcitx5-pinyin-moegirl-rime fcitx5-pinyin-zhwiki-rime \
     rime-cloverpinyin
 Info "\n===> Installing emoji from aur..."
